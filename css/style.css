@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+.site-header {
+    background: #202020;
+    max-width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.site-header .site-branding {
+    max-width: 300px;
+}
+
+.site-header .site-branding .site-title a {
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 24px 0;
+    text-decoration: none;
+}
+
+.site-navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.site-header .navbar {
+    display: flex;
+}
+
+.navbar .nav-item {
+    list-style: none;
+}
+
+.navbar .nav-item a {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-item a span {
+    font-size: 14px;
+}
+
+.navbar .nav-item img {
+    margin-right: 0.5em;
+    width: 1.3em;
+    vertical-align: middle;
+}
+
+.cover-wrapper {
+    position: relative;
+}
+
+.cover-wrapper .cover-background-overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url(/files/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cover-wrapper .cover {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cover .cover-divider {
+    display: block;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.cover .cover-seperator {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 1.25rem;
+}
+
+.cover-seperator span {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-top: 4px double white;
+}
+
+.cover .cover-title {
+    padding: 30px;
+    margin-bottom: 1.25rem;
+}
+
+.cover .cover-title h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    letter-spacing: -3px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.cover .card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container .card {
+    padding: 30px;
+    width: 33.3333%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+
+.card .card-title h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card .card-description p {
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.responsive-nav-container {
+    display: none;
+}
+
+.cover .widget-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cover .widget-wrapper .widget {
+    top: 22px;
+    position: relative;
+    color: #545957;
+    background-color: white;
+    font-weight: 600;
+    padding: 10px 100px;
+    border-radius: 5px 5px 0 0;
+}
+
+.project {
+    padding: 5rem 0 2rem 0;
+}
+
+.project .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .row .col-1 {
+    padding: 0px 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.project-span {
+    color: #ce6161;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.project-title h2 {
+    letter-spacing: -3px;
+    line-height: 1.2em;
+    color: #202020;
+    font-size: 4vw;
+    margin-bottom: 2rem;
+}
+
+.project-description p {
+    font-family: "Montserrat", sans-serif;
+    color: #7a7a7a;
+    margin-bottom: 2rem;
+}
+
+.project-button {
+    margin-bottom: 2rem;
+
+}
+
+.project-button a {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid #FF7052;
+    background-color: #FF7052;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 16%);
+}
+
+.project .row .col-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.project .row .col-2 img {
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+
+    .project {
+        padding: 3rem 1rem;
+    }
+
+    .project .row .col-1 {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .project-title h2 {
+        font-size: 5vw;
+    }
+
+    .project .row .col-2 {
+        width: 100%;
+    }
+
+
+    .cover-wrapper {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .cover-wrapper .cover {
+        width: 100%;
+    }
+
+    .cover .cover-title h1 {
+        font-size: 7vh;
+    }
+
+    .card-container .card {
+        width: 100%;
+    }
+
+    .site-header .site-navigation {
+        display: none;
+    }
+
+    #responsive-nav-button {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        right: 1rem;
+    }
+
+    .responsive-nav-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .responsive-nav-inner,
+    .responsive-nav-inner::before,
+    .responsive-nav-inner::after {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position: absolute;
+        transition: transform 0.5s ease;
+    }
+
+    .responsive-nav-inner::before {
+        display: block;
+        content: "";
+        top: -8px;
+    }
+
+    .responsive-nav-inner::after {
+        content: "";
+        display: block;
+        top: 8px;
+    }
+
+    .responsive-nav-box.is-active .responsive-nav-inner {
+        transform: rotate(-45deg);
+    }
+
+
+    .responsive-nav-box.is-active .responsive-nav-inner::before,
+    .responsive-nav-box.is-active .responsive-nav-inner::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .responsive-nav-container {
+        display: initial;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: #202020;
+        transition: transform 0.5s ease;
+        overflow: hidden;
+    }
+
+    .responsive-nav-container .responsive-nav-wrapper {
+        padding: 2rem;
+    }
+
+    .responsive-nav-container .responsive-nav-branding h1 {
+        /* text-align: center; */
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .responsive-nav-container.push-animation {
+        transform: translateX(-100%);
+    }
+
+    .responsive-nav-open .responsive-nav-container.push-animation {
+        width: 75%;
+        transform: translateX(-0%);
+    }
+
+
+
+}
